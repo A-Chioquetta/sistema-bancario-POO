@@ -1,2 +1,12 @@
-# sistema-bancario-POO
-Modelando sistema bancário em POO com Python
+# Desafio DIO: Modelando o Sistema Bancário em POO com Python
+
+## Objetivo Geral:
+
+Iniciar a modelagem do sistema bancário em POO. Adicionar classes para cliente e as operações bancárias: depósito e saque
+
+### Desafio
+
+Atualizar a implementação do sistema bancário, para armazenar os dados de clientes e contas bancárias em objetos ao invés de dicionários. O código deve seguir o modelo de classes UML a seguir:
+
+<img src="modelo_UML.png" width="600"/>
+

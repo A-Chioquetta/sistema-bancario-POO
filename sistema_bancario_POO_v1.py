@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
+from colorama import Fore, Style, init
 from datetime import datetime
 import textwrap
+init(autoreset=True) # Initialize colorama
 
 
 class Cliente:
@@ -254,10 +256,14 @@ def exibir_extrato(clientes):
         extrato = "Não foram realizadas movimentações"
     else:
         for transacao in transacoes:
-            extrato += f"\n{transacao['tipo']}:\n\tR$:{transacao['valor']:.2f}"
+            if transacao['tipo'] == 'Saque':
+                extrato += Fore.RED + f"\n{transacao['tipo']}:\t\t R$:{transacao['valor']:.2f}"
+            else:
+                extrato +=Fore.BLUE + f"\n{transacao['tipo']}:\t R$:{transacao['valor']:.2f}"
+
     
     print(extrato)
-    print(f"\nSaldo:\tR$ {conta.saldo:.2f}")
+    print(f"\nSaldo:\t\tR$ {conta.saldo:.2f}")
     print("=============================")
 
 def criar_cliente(clientes):

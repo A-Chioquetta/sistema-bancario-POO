@@ -12,3 +12,19 @@ Atualizar a implementação do sistema bancário, para armazenar os dados de cli
 
 <img src="modelo_UML.png" width="600"/>
 
+
+
+## Update
+
+Novas implementações:
+
+#### Decoradores de log:
+- Decorardor aplicado a todas as funções
+- Registra data e hora de cada ação, assim como o tipo da ação
+
+#### Gerador de relatórios:
+- Gerador que itera sobre as transações da conta e retorna uma a uma as transações que foram realizadas
+- É possivel filtrar as transações por tipo (saques, depositos ou todos) através de um menu
+
+#### Iterador personalizado:
+- Iterador que retorna informações básicas de cada conta

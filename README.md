@@ -21,6 +21,7 @@ Novas implementações:
 #### Decoradores de log:
 - Decorardor aplicado a todas as funções
 - Registra data e hora de cada ação, assim como o tipo da ação
+- Salva registro em arquivo de log (v3)
 
 #### Gerador de relatórios:
 - Gerador que itera sobre as transações da conta e retorna uma a uma as transações que foram realizadas
